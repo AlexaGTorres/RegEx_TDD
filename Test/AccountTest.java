@@ -10,4 +10,12 @@ class AccountTest
         Account alexa = new Account("Alexa", 17, 448395);
         assertTrue(alexa.getName() == "Alexa");
     }
+
+    @Test
+    void setName()
+    {
+        Account alexa = new Account("Alexa", 17, 448395);
+        alexa.setName("Ori");
+        assertTrue (alexa.getName().matches("Ori"));
+    }
 }
