@@ -8,7 +8,7 @@ class AccountTest
     void getName()
     {
         Account alexa = new Account("Alexa", 17, 448395);
-        assertTrue(alexa.getName() == "Alexa");
+        assertTrue(alexa.getName().matches("Alexa"));
     }
 
     @Test
