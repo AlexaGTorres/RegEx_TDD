@@ -8,14 +8,14 @@ class AccountTest
     void getName()
     {
         Account alexa = new Account("Alexa", 17, 448395);
-        assertTrue(alexa.getName().matches("Alexa"));
+        assertTrue(alexa.getUsername().matches("Alexa"));
     }
 
     @Test
     void setName()
     {
         Account alexa = new Account("Alexa", 17, 448395);
-        alexa.setName("Ori");
-        assertTrue (alexa.getName().matches("Ori"));
+        alexa.setUsername("Ori");
+        assertTrue (alexa.getUsername().matches("Ori"));
     }
 }

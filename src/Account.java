@@ -1,23 +1,23 @@
 public class Account
 {
-    private String name;
+    private String username;
     private int age;
     private int id;
 
-    public Account (String name, int age, int id)
+    public Account (String username, int age, int id)
     {
-        this.name = name;
+        this.username = username;
         this.age = age;
         this.id = id;
     }
 
-    public String getName()
+    public String getUsername()
     {
-        return name;
+        return username;
     }
 
-    public void setName(String name)
+    public void setUsername(String name)
     {
-        this.name = name;
+        this.username = name;
     }
 }
