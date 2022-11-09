@@ -16,8 +16,15 @@ public class Account
         return username;
     }
 
-    public void setUsername(String name)
+    public void setUsername(String username)
     {
-        this.username = name;
+        if (username.matches("[A-Z][a-zA-Z]*"))
+        {
+            this.username = username;
+        }
+        else
+        {
+            this.username = "Please Check Requirements and Try Again";
+        }
     }
 }

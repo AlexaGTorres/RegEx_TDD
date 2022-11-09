@@ -5,14 +5,14 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class AccountTest
 {
     @Test
-    void getName()
+    void getUsername()
     {
         Account alexa = new Account("Alexa", 17, 448395);
         assertTrue(alexa.getUsername().matches("Alexa"));
     }
 
     @Test
-    void setName()
+    void setUsername()
     {
         Account alexa = new Account("Alexa", 17, 448395);
         alexa.setUsername("Ori");
