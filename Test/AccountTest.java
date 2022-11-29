@@ -9,13 +9,13 @@ public class AccountTest
     {
         Account alexa = new Account("Alexa", 17, 448395);
         assertTrue(alexa.getUsername().matches("Alexa"));
-    }
+    }//Regular check
 
     @Test
     void setUsername()
     {
         Account alexa = new Account("Alexa", 17, 448395);
-        alexa.setUsername("Ori");
-        assertTrue (alexa.getUsername().matches("Ori"));
-    }
+        alexa.setUsername("Ori Torres");
+        assertTrue (alexa.getUsername().matches("Ori Torres"));
+    }//Checks if there is a space between words
 }

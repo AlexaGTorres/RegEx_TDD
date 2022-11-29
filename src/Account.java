@@ -18,7 +18,7 @@ public class Account
 
     public void setUsername(String username)
     {
-        if (username.matches("[A-Z][a-zA-Z]*"))
+        if (username.matches("[A-Z][a-zA-Z\\s]*"))//check for space between words
         {
             this.username = username;
         }
