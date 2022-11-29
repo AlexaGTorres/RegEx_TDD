@@ -1,10 +1,10 @@
 public class Account
 {
     private String username;
-    private int age;
+    private String age;
     private int id;
 
-    public Account (String username, int age, int id)
+    public Account (String username, String age, int id)
     {
         this.username = username;
         this.age = age;
@@ -25,6 +25,23 @@ public class Account
         else
         {
             this.username = "Please Check Requirements and Try Again";
+        }
+    }
+
+    public String getAge()
+    {
+        return age;
+    }
+
+    public void setAge(String age)
+    {
+        if (age.matches("[0-9]"))//check for space between words
+        {
+            this.age = age;
+        }
+        else
+        {
+            this.age = "Please Check Requirements and Try Again";
         }
     }
 }
