@@ -12,10 +12,18 @@ public class AccountTest
     }//Regular check
 
     @Test
-    void setUsername()
+    void setUsernameSpace()
     {
         Account alexa = new Account("Alexa", 17, 448395);
-        alexa.setUsername("Ori Torres");
-        assertTrue (alexa.getUsername().matches("Ori Torres"));
-    }//Checks if there is a space between words
+        alexa.setUsername(" ");
+        assertTrue (alexa.getUsername().matches(" "));
+    }//Checks if there is a space
+
+    @Test
+    void setUsernameNoSpace()
+    {
+        Account alexa = new Account("Alexa", 17, 448395);
+        alexa.setUsername("Ori");
+        assertTrue(alexa.getUsername().matches("Please Check Requirements and Try Again"));
+    }
 }
