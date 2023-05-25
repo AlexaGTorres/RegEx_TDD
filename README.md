@@ -10,4 +10,4 @@ Assignment Requirements Below:\
 -1 instance special char (non-alphanumeric).\
 -Unique feature.\
 -Good commit hygiene.\
--Standard Rioux style.\
+-Standard Rioux style.
